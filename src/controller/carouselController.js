@@ -22,8 +22,8 @@ class CarouselController {
         }
     };
 
-    changeImageIndex() {
-        this.imageIndex = this.imageIndex % this.carouselLength;
+    changeImageIndex(index) {
+        this.imageIndex = index % this.carouselLength;
     };
 }
 
