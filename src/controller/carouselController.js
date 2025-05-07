@@ -4,6 +4,10 @@ class CarouselController {
         this.hideImages();
     }
 
+    showImage(image) {
+        image.style.display = "block";
+    }
+
     hideImage(image) {
         image.style.display = "none";
     };
