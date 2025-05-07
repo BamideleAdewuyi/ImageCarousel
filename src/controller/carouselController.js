@@ -5,7 +5,7 @@ class CarouselController {
         this.counter = 0;
         this.currentImage = this.carouselImages[this.imageIndex];
         this.hideImages();
-        this.showImage(this.currentImage)
+        this.showImage(this.currentImage);
     };
 
     showImage(image) {
@@ -22,7 +22,7 @@ class CarouselController {
         }
     };
 
-    changeImageIndex(index) {
+    getCurrentImage(index) {
         this.imageIndex = index % this.carouselLength;
     };
 }
