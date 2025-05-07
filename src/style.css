@@ -11,6 +11,7 @@
 
 .carousel {
     outline: 2px solid blue;
+    display: flex;
     width: 60%;
     height: 100%;
 }
