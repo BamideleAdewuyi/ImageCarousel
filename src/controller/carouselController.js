@@ -1,6 +1,7 @@
 class CarouselController {
     constructor() {
-        this.carouselImages = document.querySelectorAll(".carouselImages")
+        this.carouselImages = document.querySelectorAll(".carouselImages");
+        this.carouselLength = this.carouselImages.length;
         this.hideImages();
     }
 
