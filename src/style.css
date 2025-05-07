@@ -5,8 +5,9 @@
 .container {
     position: relative;
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     width: 90em;
     height: 40rem;
     left: 10em;
