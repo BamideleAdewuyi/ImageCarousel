@@ -4,6 +4,9 @@
 
 .container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90em;
     height: 40rem;
     left: 10em;
@@ -16,7 +19,7 @@
     align-items: center;
     justify-content: center;
     width: 60%;
-    height: 90%;
+    height: 80%;
 }
 
 .carouselImage {
