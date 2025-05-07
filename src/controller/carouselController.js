@@ -6,11 +6,11 @@ class CarouselController {
         this.currentImage = this.carouselImages[this.imageIndex];
         this.hideImages();
         this.showImage(this.currentImage)
-    }
+    };
 
     showImage(image) {
         image.style.display = "block";
-    }
+    };
 
     hideImage(image) {
         image.style.display = "none";
@@ -20,7 +20,11 @@ class CarouselController {
         for (const image of this.carouselImages) {
             this.hideImage(image);
         }
-    }
+    };
+
+    changeImageIndex() {
+        this.imageIndex = this.imageIndex % this.carouselLength;
+    };
 }
 
 export default CarouselController;
