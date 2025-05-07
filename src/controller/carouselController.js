@@ -22,8 +22,10 @@ class CarouselController {
         }
     };
 
-    getCurrentImage(index) {
-        this.imageIndex = index % this.carouselLength;
+    getCurrentImage(counter) {
+        const currentImageIndex = counter % this.carouselLength;
+
+        return currentImageIndex;
     };
 }
 
