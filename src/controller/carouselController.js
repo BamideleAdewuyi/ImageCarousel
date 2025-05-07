@@ -4,6 +4,7 @@ class CarouselController {
         this.carouselLength = this.carouselImages.length - 1;
         this.currentImage = this.carouselImages[0];
         this.hideImages();
+        this.showImage(this.currentImage)
     }
 
     showImage(image) {
