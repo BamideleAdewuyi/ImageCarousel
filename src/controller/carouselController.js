@@ -1,12 +1,11 @@
 class CarouselController {
     constructor() {
-        this.carouselImage = document.querySelectorAll(".carouselImage")
-        console.log(this.carouselImage)
+        this.carouselImages = document.querySelectorAll(".carouselImage")
     }
 
     hideImage(image) {
         image.style.display = "none";
-    }
+    };
 }
 
 export default CarouselController;
