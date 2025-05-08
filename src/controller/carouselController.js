@@ -30,10 +30,12 @@ class CarouselController {
     getCurrentImage() {
         const currentImage = this.carouselImages[this.getCurrentImageIndex(this.counter)]
         return currentImage;
-    }
+    };
 
     next() {
-
+        this.counter += 1;
+        const nextImage = this.getCurrentImage();
+        return nextImage;
     };
 }
 
