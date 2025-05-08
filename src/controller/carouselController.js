@@ -55,7 +55,12 @@ class CarouselController {
     };
 
     previous() {
-        this.counter -= 1;
+        if (this.counter == 0) {
+            this.counter = this.carouselLength - 1;
+        }
+        else {
+            this.counter -= 1;
+        }
         this.currentImage = this.getCurrentImage();
     }
 }
