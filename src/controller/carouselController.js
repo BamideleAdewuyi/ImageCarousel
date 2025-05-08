@@ -14,6 +14,14 @@ class CarouselController {
     addListeners() {
         this.leftArrow.addEventListener("click", () => {
             this.hideImages();
+            this.previous();
+            this.showImage(this.currentImage);
+        })
+
+        this.rightArrow.addEventListener("click", () => {
+            this.hideImages();
+            this.next();
+            this.showImage(this.currentImage);
         })
     };
 
@@ -43,10 +51,12 @@ class CarouselController {
 
     next() {
         this.counter += 1;
+        this.currentImage = this.getCurrentImage();
     };
 
     previous() {
         this.counter -= 1;
+        this.currentImage = this.getCurrentImage();
     }
 }
 
