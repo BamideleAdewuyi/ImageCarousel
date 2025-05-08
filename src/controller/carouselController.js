@@ -10,6 +10,10 @@ class CarouselController {
         this.showImage(this.currentImage);
     };
 
+    addListeners() {
+        
+    };
+
     showImage(image) {
         image.style.display = "block";
     };
