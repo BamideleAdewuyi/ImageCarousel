@@ -37,6 +37,12 @@ class CarouselController {
         const nextImage = this.getCurrentImage();
         return nextImage;
     };
+
+    previous() {
+        this.counter -= 1;
+        const previousImage = this.getCurrentImage();
+        return previousImage;
+    }
 }
 
 export default CarouselController;
