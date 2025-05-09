@@ -9,6 +9,7 @@ class CarouselController {
         this.currentImage = this.getCurrentImage();
         this.hideImages();
         this.showImage(this.currentImage);
+        this.createDots();
         this.addListeners()
     };
 
@@ -68,7 +69,8 @@ class CarouselController {
     createDots() {
         for (let i = 0; i < this.carouselLength; i++) {
             const dot = document.createElement("span")
-            dot.classList.add("dot");
+            dot.classList.add("navigationDot");
+            this.carousel.append(dot)
         }
     }
 }
