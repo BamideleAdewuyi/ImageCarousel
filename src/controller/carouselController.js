@@ -63,6 +63,10 @@ class CarouselController {
         }
         this.currentImage = this.getCurrentImage();
     }
+
+    createDots() {
+        
+    }
 }
 
 export default CarouselController;
