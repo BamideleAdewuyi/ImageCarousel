@@ -12,8 +12,10 @@ class CarouselController {
         this.showImage(this.currentImage);
         this.createDots();
         this.selectDot(document.getElementById("0"))
-        this.timer();
         this.addListeners()
+        this.interval = setInterval(() => {
+            this.timer()
+        }, "1000")
     };
 
     addListeners() {
@@ -85,13 +87,11 @@ class CarouselController {
     }
 
     timer() {
-        setInterval(() => {
-                    this.next();
-                    this.hideImages();
-                    this.showImage(this.currentImage);
-                    this.resetDots();
-                    this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter )))
-                }, "5000")
+        this.next();
+        this.hideImages();
+        this.showImage(this.currentImage);
+        this.resetDots();
+        this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter )))
     };
 
     createDots() {
