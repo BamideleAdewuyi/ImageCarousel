@@ -34,7 +34,12 @@ class CarouselController {
 
         for (const dot of document.querySelectorAll(".navigationDot")) {
             dot.addEventListener("click", () => {
-                
+                this.counter = dot.id;
+                this.resetDots();
+                this.selectDot(dot);
+                this.currentImage = this.getCurrentImage()
+                this.hideImages()
+                this.showImage(this.currentImage)
             })
         }
     };
