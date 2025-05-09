@@ -71,6 +71,7 @@ class CarouselController {
         for (let i = 0; i < this.carouselLength; i++) {
             const dot = document.createElement("span")
             dot.classList.add("navigationDot");
+            dot.setAttribute("id", i)
             this.navigationDots.append(dot)
         }
     }
