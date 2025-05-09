@@ -83,7 +83,7 @@ class CarouselController {
     }
 
     selectDot(dot) {
-
+        dot.style.backgroundColor = 'black'
     }
 }
 
