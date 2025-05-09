@@ -11,6 +11,7 @@ class CarouselController {
         this.hideImages();
         this.showImage(this.currentImage);
         this.createDots();
+        this.selectDot(document.getElementById("0"))
         this.addListeners()
     };
 
