@@ -1,6 +1,7 @@
 class CarouselController {
     constructor() {
         this.carousel = document.querySelector(".carousel");
+        this.navigationDots = document.querySelector(".navigationDots");
         this.carouselImages = document.querySelectorAll(".carouselImages");
         this.leftArrow = document.querySelector("#leftArrow");
         this.rightArrow = document.querySelector("#rightArrow");
@@ -70,7 +71,7 @@ class CarouselController {
         for (let i = 0; i < this.carouselLength; i++) {
             const dot = document.createElement("span")
             dot.classList.add("navigationDot");
-            this.carousel.append(dot)
+            this.navigationDots.append(dot)
         }
     }
 }
