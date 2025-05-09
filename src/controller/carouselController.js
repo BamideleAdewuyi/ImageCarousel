@@ -83,6 +83,10 @@ class CarouselController {
         this.currentImage = this.getCurrentImage();
     }
 
+    timer() {
+
+    };
+
     createDots() {
         for (let i = 0; i < this.carouselLength; i++) {
             const dot = document.createElement("span")
