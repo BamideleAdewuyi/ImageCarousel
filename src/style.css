@@ -28,7 +28,9 @@
 }
 
 .navigationDots {
-    outline: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 10%;
     width: 100%;
 }
@@ -45,6 +47,7 @@
     outline: 1px solid black;
     height: 25px;
     width: 25px;
+    margin: 3em;
     background-color: black;
     border-radius: 50%;
     display: inline-block;
