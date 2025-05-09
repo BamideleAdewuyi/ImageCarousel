@@ -65,7 +65,10 @@ class CarouselController {
     }
 
     createDots() {
-        
+        for (let i = 0; i < this.carouselLength; i++) {
+            const dot = document.createElement("span")
+            dot.classList.add("dot");
+        }
     }
 }
 
