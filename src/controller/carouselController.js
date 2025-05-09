@@ -2,7 +2,6 @@ class CarouselController {
     constructor() {
         this.carousel = document.querySelector(".carousel");
         this.navigationDots = document.querySelector(".navigationDots");
-        this.navigationDot = document.querySelectorAll(".navigationDot");
         this.carouselImages = document.querySelectorAll(".carouselImages");
         this.leftArrow = document.querySelector("#leftArrow");
         this.rightArrow = document.querySelector("#rightArrow");
@@ -32,6 +31,12 @@ class CarouselController {
             this.resetDots();
             this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter)))
         })
+
+        for (const dot of document.querySelectorAll(".navigationDot")) {
+            dot.addEventListener("click", () => {
+                
+            })
+        }
     };
 
     showImage(image) {
