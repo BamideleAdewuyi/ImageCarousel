@@ -75,6 +75,10 @@ class CarouselController {
             this.navigationDots.append(dot)
         }
     }
+
+    selectDot(dot) {
+        
+    }
 }
 
 export default CarouselController;
