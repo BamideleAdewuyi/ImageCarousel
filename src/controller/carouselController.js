@@ -19,12 +19,16 @@ class CarouselController {
             this.hideImages();
             this.previous();
             this.showImage(this.currentImage);
+            this.resetDots()
+            this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter)))
         })
 
         this.rightArrow.addEventListener("click", () => {
             this.hideImages();
             this.next();
             this.showImage(this.currentImage);
+            this.resetDots();
+            this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter)))
         })
     };
 
