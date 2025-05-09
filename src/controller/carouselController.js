@@ -77,7 +77,9 @@ class CarouselController {
     }
 
     resetDots() {
-        
+        for (const dot of document.querySelectorAll(".navigationDot")) {
+            dot.style.backgroundColor = 'white';
+        }
     }
 
     selectDot(dot) {
