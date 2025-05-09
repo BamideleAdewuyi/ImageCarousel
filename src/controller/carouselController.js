@@ -1,5 +1,6 @@
 class CarouselController {
     constructor() {
+        this.carousel = document.querySelector(".carousel");
         this.carouselImages = document.querySelectorAll(".carouselImages");
         this.leftArrow = document.querySelector("#leftArrow");
         this.rightArrow = document.querySelector("#rightArrow");
