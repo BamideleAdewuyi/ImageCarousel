@@ -76,8 +76,12 @@ class CarouselController {
         }
     }
 
-    selectDot(dot) {
+    resetDots() {
         
+    }
+
+    selectDot(dot) {
+
     }
 }
 
