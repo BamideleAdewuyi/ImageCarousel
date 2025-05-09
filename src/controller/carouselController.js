@@ -15,7 +15,7 @@ class CarouselController {
         this.addListeners()
         this.interval = setInterval(() => {
             this.timer()
-        }, "1000")
+        }, "5000")
     };
 
     addListeners() {
@@ -25,6 +25,7 @@ class CarouselController {
             this.showImage(this.currentImage);
             this.resetDots()
             this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter)))
+            this.resetTimer();
         })
 
         this.rightArrow.addEventListener("click", () => {
@@ -32,7 +33,8 @@ class CarouselController {
             this.next();
             this.showImage(this.currentImage);
             this.resetDots();
-            this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter)))
+            this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter)));
+            this.resetTimer();
         })
 
         for (const dot of document.querySelectorAll(".navigationDot")) {
@@ -43,6 +45,7 @@ class CarouselController {
                 this.currentImage = this.getCurrentImage()
                 this.hideImages()
                 this.showImage(this.currentImage)
+                this.resetTimer();
             })
         }
     };
@@ -94,8 +97,11 @@ class CarouselController {
         this.selectDot(document.getElementById(this.getCurrentImageIndex(this.counter )))
     };
 
-    stopTimer() {
+    resetTimer() {
         clearInterval(this.interval);
+        this.interval = setInterval(() => {
+            this.timer()
+        }, "5000")
     }
 
     createDots() {
